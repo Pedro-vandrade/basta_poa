@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve sua mesa no Basta Bar Italiano no Bom Fim, Porto Alegre. Atendimento de terça a sábado, 18h30 às 00h00.">
+  <title>Reservas | Basta — Itália no Copo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-nav-wrap">
+      <div class="header-inner">
+        <a class="brand-link" href="index.html">
+          <img class="brand-logo" src="assets/img/logo-basta.png" alt="Logotipo Basta Bar Italiano" width="48" height="48">
+          <span class="brand-text">
+            <span class="brand-title">BASTA</span>
+            <span class="brand-subtitle">Itália no Copo</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+          <li><a class="nav-link" href="drinks.html">Drinks</a></li>
+          <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li><a class="nav-link is-active" href="reservas.html">Reservas</a></li>
+          <li><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Garanta seu Lugar</span>
+        <h1>Reservas de Mesa</h1>
+        <p>Escolha entre o salão interno ou as mesas voltadas para a Praça Berta Starosta para o seu happy hour ou jantar.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-with-aside">
+        <div class="form-card">
+          <h2>Solicitar Reserva</h2>
+          <form id="reservation-form" novalidate>
+            <div class="form-grid form-grid--2">
+              <div class="form-group">
+                <label for="res-nome">Nome completo *</label>
+                <input type="text" id="res-nome" name="nome" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="res-email">E-mail *</label>
+                <input type="email" id="res-email" name="email" placeholder="voce@exemplo.com" required>
+              </div>
+              <div class="form-group">
+                <label for="res-whats">WhatsApp *</label>
+                <input type="tel" id="res-whats" name="whatsapp" placeholder="(51) 99999-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="res-pessoas">Número de pessoas *</label>
+                <select id="res-pessoas" name="pessoas" required>
+                  <option value="">Selecione</option>
+                  <option value="2">2 pessoas</option>
+                  <option value="4">3 a 4 pessoas</option>
+                  <option value="6">5 a 6 pessoas</option>
+                  <option value="8+">8 ou mais pessoas</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="res-data">Data desejada *</label>
+                <input type="date" id="res-data" name="data" required>
+              </div>
+              <div class="form-group">
+                <label for="res-horario">Horário *</label>
+                <select id="res-horario" name="horario" required>
+                  <option value="">Selecione</option>
+                  <option value="18:30">18h30</option>
+                  <option value="19:30">19h30</option>
+                  <option value="20:30">20h30</option>
+                  <option value="21:30">21h30</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="res-obs">Observações (preferência pela praça, aniversário, restrição alimentar)</label>
+              <textarea id="res-obs" name="observacoes" rows="3" placeholder="Conte se há alguma preferência para a sua mesa"></textarea>
+            </div>
+            <div style="margin-top: 1.25rem;">
+              <button class="btn btn-primary" type="submit">Enviar Solicitação</button>
+            </div>
+            <div class="form-feedback" id="reservation-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="aside-box">
+          <h3>Regras de Reserva</h3>
+          <p><strong>Tolerância:</strong> mantemos a mesa reservada por até 20 minutos após o horário combinado.</p>
+          <p><strong>Funcionamento:</strong> terça a sábado, das 18h30 às 00h00.</p>
+          <p><strong>Para hoje?</strong> Se a reserva for para o mesmo dia, recomendamos confirmar direto no WhatsApp.</p>
+          <a class="btn btn-whatsapp" href="https://wa.me/5551999990000?text=Ol%C3%A1!%20Quero%20confirmar%20uma%20reserva%20no%20Basta." target="_blank" rel="noopener noreferrer">Confirmar via WhatsApp</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-title">Basta — Itália no Copo</h2>
+          <p>Gastronomia italiana descomplicada e coquetelaria autoral na Praça Berta Starosta, Bom Fim.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Navegação</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="drinks.html">Carta de Drinks</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Localização e Contato</h2>
+          <ul class="footer-links">
+            <li>Rua Vasco da Gama, 270 — Bom Fim, POA</li>
+            <li>Terça a Sábado, 18h30 – 00h00</li>
+            <li>WhatsApp exemplo: (51) 99999-0000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Basta Bar Italiano — Projeto acadêmico de Desenvolvimento Web Mobile.</span>
+        <span>@basta_poa</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5551999990000?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20no%20Basta." target="_blank" rel="noopener noreferrer" aria-label="Atendimento rápido via WhatsApp">WhatsApp</a>
+</body>
+</html>

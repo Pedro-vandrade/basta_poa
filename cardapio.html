@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio do Basta Bar Italiano: entradas, pratos para compartilhar, massas artesanais, pizzas e sobremesas no Bom Fim.">
+  <title>Cardápio | Basta — Itália no Copo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-nav-wrap">
+      <div class="header-inner">
+        <a class="brand-link" href="index.html">
+          <img class="brand-logo" src="assets/img/logo-basta.png" alt="Logotipo Basta Bar Italiano" width="48" height="48">
+          <span class="brand-text">
+            <span class="brand-title">BASTA</span>
+            <span class="brand-subtitle">Itália no Copo</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      </div>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link is-active" href="cardapio.html">Cardápio</a></li>
+          <li><a class="nav-link" href="drinks.html">Drinks</a></li>
+          <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li><a class="nav-link" href="reservas.html">Reservas</a></li>
+          <li><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Cozinha Italiana Descomplicada</span>
+        <h1>Cardápio de Comidas</h1>
+        <p>Petiscos para abrir o apetite, pratos feitos para dividir na mesa da praça, massas, pizzas e sobremesas artesanais.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-with-aside">
+        <div>
+          <div class="filter-bar" role="group" aria-label="Filtrar categorias do cardápio">
+            <button class="filter-btn is-active" type="button" data-filter="all">Todos</button>
+            <button class="filter-btn" type="button" data-filter="iniciare">Per Iniciare</button>
+            <button class="filter-btn" type="button" data-filter="condividere">Per Condividere</button>
+            <button class="filter-btn" type="button" data-filter="pasta">Pasta</button>
+            <button class="filter-btn" type="button" data-filter="pizza">Pizza</button>
+            <button class="filter-btn" type="button" data-filter="dolci">Dolci</button>
+          </div>
+
+          <section class="menu-category" data-category="iniciare">
+            <h2 class="menu-category-title">Per Iniciare</h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Polenta</span>
+                  <span class="menu-item-price">R$ 35</span>
+                </div>
+                <p class="menu-item-desc">Polentinha frita, fininha e crocante, finalizada com queijo parmesão. Acompanha maionese de limão siciliano e tomatada.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Pizza Fritta</span>
+                  <span class="menu-item-price">R$ 42</span>
+                </div>
+                <p class="menu-item-desc">Mortadela italiana, creme de ricota fresca, pesto de manjericão e pistache.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Supplì al Telefono (4 un.)</span>
+                  <span class="menu-item-price">R$ 40</span>
+                </div>
+                <p class="menu-item-desc">O arancini de Roma. Bolinho frito de risoto à base de tomates italianos recheados com mozzarella.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Panzanella</span>
+                  <span class="menu-item-price">R$ 42</span>
+                </div>
+                <p class="menu-item-desc">Salada típica da Toscana feita com tomates confit, tomates in natura, zucchini marinada, mozzarella de búfala e farofa de focaccia.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Burrata</span>
+                  <span class="menu-item-price">R$ 68</span>
+                </div>
+                <p class="menu-item-desc">Burrata cremosa de 150g, tomatada, tomatinhos confit e pesto. Acompanha focaccia tostadinha no forno de pizza.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="menu-category" data-category="condividere">
+            <h2 class="menu-category-title">Per Condividere</h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Fritto Misto di Mare</span>
+                  <span class="menu-item-price">R$ 68</span>
+                </div>
+                <p class="menu-item-desc">Clássica comida de rua de Nápoles. Misto de camarão e lula à dorê. Acompanha maionese de limão siciliano.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Carne Cruda</span>
+                  <span class="menu-item-price">R$ 55</span>
+                </div>
+                <p class="menu-item-desc">Carne crua picada na ponta da faca, azeite de oliva, limão, sal, pimenta preta, pistache e basta. Acompanha pane carasau feito na casa.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Polpettini</span>
+                  <span class="menu-item-price">R$ 62</span>
+                </div>
+                <p class="menu-item-desc">Pequenas almôndegas douradas e cozidas no molho de tomate da casa, finalizadas com parmesão gratinado direto no forno de pizza. Acompanha focaccia.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Crudo di Tonno</span>
+                  <span class="menu-item-price">R$ 60</span>
+                </div>
+                <p class="menu-item-desc">Stracciatella, atum em cubos temperados com limão e azeite de manjericão. Acompanha pane carasau feito na casa.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="menu-category" data-category="pasta">
+            <h2 class="menu-category-title">Pasta</h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Rigatoni alla Carbonara</span>
+                  <span class="menu-item-price">R$ 72</span>
+                </div>
+                <p class="menu-item-desc">Guanciale, creme de gemas com parmesão e pimenta preta.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Spaghetti alle Vongôle</span>
+                  <span class="menu-item-price">R$ 72</span>
+                </div>
+                <p class="menu-item-desc">Molho cremoso à base de azeite italiano e.v., alho, vinho branco, salsinha, limão e vôngoles, finalizado com pangrattato.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Rigatoni alla Vodka</span>
+                  <span class="menu-item-price">R$ 60</span>
+                </div>
+                <p class="menu-item-desc">Molho de tomates italianos, vodka, toque de limão siciliano, mozzarella de búfala e parmesão gratinados no forno de pizza.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="menu-category" data-category="pizza">
+            <h2 class="menu-category-title">Pizza</h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Peperonni</span>
+                  <span class="menu-item-price">R$ 52</span>
+                </div>
+                <p class="menu-item-desc">Peperoni, mozzarella de búfala, parmesão, mel fermentado, cebola roxa e manjericão.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Prosciutto</span>
+                  <span class="menu-item-price">R$ 58</span>
+                </div>
+                <p class="menu-item-desc">Prosciutto crudo italiano, molho de tomate, mozzarella de búfala, parmesão, rúcula e molho pesto.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Zucchini <span class="badge badge--vegan">Opção Vegana</span></span>
+                  <span class="menu-item-price">R$ 52</span>
+                </div>
+                <p class="menu-item-desc">Zucchini marinada no alho e limão, ricota, mozzarella de búfala, cebola roxa e pistache.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Marguerita <span class="badge badge--vegan">Opção Vegana</span></span>
+                  <span class="menu-item-price">R$ 45</span>
+                </div>
+                <p class="menu-item-desc">Molho de tomates italianos, tomate confitado, mozzarella de búfala, parmesão, molho pesto e manjericão.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Adicional de Burrata (em qualquer pizza)</span>
+                  <span class="menu-item-price">+ R$ 32</span>
+                </div>
+                <p class="menu-item-desc">Burrata fresca e cremosa de 150g finalizada na hora.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="menu-category" data-category="dolci">
+            <h2 class="menu-category-title">Dolci</h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Meringata al Limone</span>
+                  <span class="menu-item-price">R$ 35</span>
+                </div>
+                <p class="menu-item-desc">Lemon curd e crumble, cobertos por merengue italiano tostado.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Mousse al Cioccolato</span>
+                  <span class="menu-item-price">R$ 38</span>
+                </div>
+                <p class="menu-item-desc">Chocolate belga 70%, amêndoas e caramelo salgado.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <aside class="aside-box">
+          <h3>Sugestão da Casa</h3>
+          <p>Para começar a noite na praça: combine o <strong>Supplì al Telefono</strong> com o nosso <strong>Limoncello Spritz</strong> feito na casa.</p>
+          <p>Todas as pizzas Marguerita e Zucchini podem ser pedidas na versão vegana — avise ao garçom.</p>
+          <a class="btn btn-primary" href="drinks.html">Ver Carta de Drinks</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-title">Basta — Itália no Copo</h2>
+          <p>Gastronomia italiana descomplicada e coquetelaria autoral na Praça Berta Starosta, Bom Fim.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Navegação</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="drinks.html">Carta de Drinks</a></li>
+            <li><a href="galeria.html">Galeria Visual</a></li>
+            <li><a href="reservas.html">Reservar Mesa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Localização e Contato</h2>
+          <ul class="footer-links">
+            <li>Rua Vasco da Gama, 270 — Bom Fim, POA</li>
+            <li>Terça a Sábado, 18h30 – 00h00</li>
+            <li><a href="contato.html">Formulário &amp; WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Basta Bar Italiano — Projeto acadêmico de Desenvolvimento Web Mobile.</span>
+        <span>WhatsApp exemplo: (51) 99999-0000</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5551999990000?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20card%C3%A1pio." target="_blank" rel="noopener noreferrer" aria-label="Atendimento rápido via WhatsApp">WhatsApp</a>
+</body>
+</html>
